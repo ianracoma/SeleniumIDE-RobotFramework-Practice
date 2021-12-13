@@ -5,7 +5,7 @@
   "url": "https://www.saucedemo.com",
   "tests": [{
     "id": "5b28ca5a-8eca-4f5b-a767-181267350f1b",
-    "name": "successful_login_test",
+    "name": "Successful Login",
     "commands": [{
       "id": "854fde14-61a8-4c19-bbf1-93ac12dbe20e",
       "comment": "",
@@ -88,17 +88,10 @@
       ],
       "value": ""
     }, {
-      "id": "0c05756a-24a9-49eb-a1d2-7af39ce78193",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.title",
-      "targets": [],
-      "value": "PRODUCTS"
-    }, {
       "id": "505c6025-9df4-4711-abc1-93093572df7c",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=.app_logo",
+      "target": "css=*[src=\"/static/media/sauce-backpack-1200x1500.34e7aa42.jpg\"]",
       "targets": [
         ["css=.app_logo", "css:finder"],
         ["xpath=//div[@id='header_container']/div/div[2]/div", "xpath:idRelative"],
@@ -115,7 +108,7 @@
     }]
   }, {
     "id": "7854a2cf-5f88-427a-83c3-bc3623210608",
-    "name": "locked_out_user_test",
+    "name": "Locked Out User Test",
     "commands": [{
       "id": "210a1adf-447f-4049-ade6-9ff773e1959c",
       "comment": "",
@@ -220,7 +213,7 @@
     }]
   }, {
     "id": "c16cd9c9-f8a0-45ea-9467-fe6a8572eec8",
-    "name": "wrong_password",
+    "name": "Wrong Password",
     "commands": [{
       "id": "1faf514c-4ca5-4c63-9273-2a6d405fac2a",
       "comment": "",
@@ -331,7 +324,7 @@
     }]
   }, {
     "id": "48edd0b6-2d0e-4b73-b96c-d2bf912131dd",
-    "name": "problem_user",
+    "name": "Problem User Broken Inventory",
     "commands": [{
       "id": "2fe7dc38-57a0-4bab-8b75-c0deb337a40f",
       "comment": "",
@@ -450,6 +443,958 @@
       "value": ""
     }, {
       "id": "0a8b60ab-5d5a-419b-8521-9bde62d675ea",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "74adf015-104e-4b6d-8fab-a8ed92027660",
+    "name": "Sort Product Name (Z to A)",
+    "commands": [{
+      "id": "646f1840-b0e9-4e28-b492-04ddfaae5163",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8db8d486-21ff-4ee3-98f3-73a43815d599",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x879",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04539938-dc15-46dc-beb0-2c34beb23856",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3074d1f8-2628-4669-b1e2-b0c1e732f257",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "2d69f6e7-71de-40a9-90fa-8dce7be85fdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4c1dff9-a2e5-4255-ad0c-fb3933145da5",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "01719ac6-4d90-4b74-b60d-baed15e1a356",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f5ef437-dc3d-4296-a809-77be52b38810",
+      "comment": "",
+      "command": "select",
+      "target": "css=*[data-test=\"product_sort_container\"]",
+      "targets": [
+        ["css=*[data-test=\"product_sort_container\"]", "css:data-attr"],
+        ["css=.product_sort_container", "css:finder"],
+        ["xpath=//div[@id='header_container']/div[2]/div[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Name (Z to A)"
+    }, {
+      "id": "32f077aa-8193-4af3-8c65-1933a633d59e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Test.allTheThings() T-Shirt (Red)"
+    }, {
+      "id": "bbd7a930-fb3e-4950-b6c0-147b615b8690",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "415afc94-7028-4863-81d5-b2b752b43044",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-tatt-1200x1500.e32b4ef9.jpg"
+    }, {
+      "id": "58f91898-c998-4e84-ac2f-1e3443828925",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Onesie"
+    }, {
+      "id": "71b30257-0ebd-4a75-95ac-55142bf8d8a5",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "2bd1f972-c5b7-4e64-b30a-1a93f9850147",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-onesie-1200x1500.1b15e1fa.jpg"
+    }, {
+      "id": "7acdd6e1-a6c3-4110-a881-a7785969e04f",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Fleece Jacket"
+    }, {
+      "id": "cf211257-647f-4dcd-9099-b798446b77d6",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "cdc2542b-20ae-4c8a-a054-f134c77ca2d1",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-pullover-1200x1500.439fc934.jpg"
+    }, {
+      "id": "03947319-1d20-46de-8800-a51967364ab7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bolt T-Shirt"
+    }, {
+      "id": "f2f5be6f-9cec-4a05-8acd-02558e3333d0",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "dfc4406c-d7c5-4b30-a252-49d3046c0c18",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bolt-shirt-1200x1500.c0dae290.jpg"
+    }, {
+      "id": "f2fe4251-c576-4217-929a-a3cbfb0a863b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bike Light"
+    }, {
+      "id": "20d98897-53b6-4ead-be00-f965e6baeef3",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "43106867-8434-4cf2-be17-a6da580e928f",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bike-light-1200x1500.a0c9caae.jpg"
+    }, {
+      "id": "89729c6e-8054-462e-a6c4-2beedc2f2a1a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Backpack"
+    }, {
+      "id": "95893f80-fc38-4e3a-8758-7a39be87dc63",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "3efd963f-5f51-43e3-a72e-85728b3c8f0a",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-backpack-1200x1500.34e7aa42.jpg"
+    }, {
+      "id": "efe60141-37f1-42ee-a505-5cdefe0d880e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c95f1ea8-155e-40ff-a763-b314bd07399f",
+    "name": "Sort Product Name (A to Z)",
+    "commands": [{
+      "id": "0149c7d2-c9d3-4eae-b373-ef2fe0335ab9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5973d856-2506-479b-abbf-f1b217d68054",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x879",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94984a1d-4379-41fc-91ad-e22ce43f4cda",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fbc0871-50be-4cc1-a6a9-df51753058ce",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "ae4f3215-b09a-4a66-a7ff-f021b44c0131",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e92e6e8b-d95b-47b7-adfa-36235166a7e3",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "df08fe93-a375-4f23-ac0d-17b66a39ad15",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd32d7b5-f79e-4a25-87a9-9ef910d74dfe",
+      "comment": "",
+      "command": "select",
+      "target": "css=*[data-test=\"product_sort_container\"]",
+      "targets": [
+        ["css=*[data-test=\"product_sort_container\"]", "css:data-attr"],
+        ["css=.product_sort_container", "css:finder"],
+        ["xpath=//div[@id='header_container']/div[2]/div[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Name (A to Z)"
+    }, {
+      "id": "ca1729e8-edbb-44c1-b684-300bf8bc4475",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Backpack"
+    }, {
+      "id": "f129a50e-852a-4cb8-afa5-1118aefcf620",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "9d35d1a8-c6f0-417a-8ce3-7c747a2d96b3",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-backpack-1200x1500.34e7aa42.jpg"
+    }, {
+      "id": "a35616b8-3a3b-468d-9d07-db678a2bb166",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bike Light"
+    }, {
+      "id": "0146cdb9-c36d-4395-96be-cab8b12b4d85",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "fa4a297c-6126-4c3e-87bb-b85876f46c34",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bike-light-1200x1500.a0c9caae.jpg"
+    }, {
+      "id": "f7506adb-0382-43e6-a70d-149a774e12c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bolt T-Shirt"
+    }, {
+      "id": "b88da019-0d7c-46c4-8394-75546a473a79",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "279d0161-0185-42ee-abad-a36a05a8117c",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bolt-shirt-1200x1500.c0dae290.jpg"
+    }, {
+      "id": "9421b3c1-192c-4691-9eee-ac68dce4ad22",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Fleece Jacket"
+    }, {
+      "id": "debce8e4-e59f-4258-8354-fc2756abd0e4",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "c1043162-5c24-48e7-8395-df376cabb9a2",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-pullover-1200x1500.439fc934.jpg"
+    }, {
+      "id": "07c8ffe2-60c6-435e-9bda-69483c80c7fd",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Onesie"
+    }, {
+      "id": "e4fff026-7fe6-4fe6-81ad-d6917d7e4af2",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "3363b158-9a98-4173-b8bb-5b643b46318b",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-onesie-1200x1500.1b15e1fa.jpg"
+    }, {
+      "id": "65b3f6ab-8871-45a3-b749-23ddcab24f8a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Test.allTheThings() T-Shirt (Red)"
+    }, {
+      "id": "e257a88d-d78d-4056-b9f1-c1637f3c9c0a",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "e99249b7-e9b1-4237-868f-c14c1d089733",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-tatt-1200x1500.e32b4ef9.jpg"
+    }, {
+      "id": "b84cc22f-c99b-4841-b780-f2a3a3ea4929",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5ed9fe9d-4029-415e-90b2-6cb70b13b935",
+    "name": "Sort Product Name (Low to High)",
+    "commands": [{
+      "id": "6c536351-efb7-4e96-bb5f-89ab5726fd18",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "711e9dc9-096e-4881-acf4-ccf9695aefc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x879",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d063ea6e-3262-4f32-bec2-a356307e11ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab0ffebd-d40c-48f3-8849-c4aa0c50832f",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "ad917a7c-9432-4f1f-acac-695ee0635ea0",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1638106-718b-40d9-8c6c-351ec6292868",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "2534768a-887e-41ee-a34a-1fad5c3512bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22da527f-932c-4036-abb6-2d2530af3c1a",
+      "comment": "",
+      "command": "select",
+      "target": "css=*[data-test=\"product_sort_container\"]",
+      "targets": [
+        ["css=*[data-test=\"product_sort_container\"]", "css:data-attr"],
+        ["css=.product_sort_container", "css:finder"],
+        ["xpath=//div[@id='header_container']/div[2]/div[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Price (low to high)"
+    }, {
+      "id": "0949b5f7-df31-45cf-8d29-df3301226fd2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Onesie"
+    }, {
+      "id": "c562ebe6-d2eb-4932-87b7-40060e18a9e1",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "c6ee1ac0-45c5-4929-9b1f-6f0a5962879e",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-onesie-1200x1500.1b15e1fa.jpg"
+    }, {
+      "id": "582466f4-0819-437a-bcd5-1d1353becb35",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bike Light"
+    }, {
+      "id": "5e62b463-789d-41b3-8a79-640a5cf6d429",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "6e23c353-1cb3-4641-b8d6-0edfd8306abb",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bike-light-1200x1500.a0c9caae.jpg"
+    }, {
+      "id": "b485298c-77c1-4113-82d6-bc6d170464ad",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bolt T-Shirt"
+    }, {
+      "id": "dea64a72-17d7-42d4-a54d-1effcbbc72e8",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "617604c1-cd0b-40d1-be7f-08a6ba1f9d5a",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bolt-shirt-1200x1500.c0dae290.jpg"
+    }, {
+      "id": "bcff5258-e33e-40fc-963a-d42f319b8110",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Test.allTheThings() T-Shirt (Red)"
+    }, {
+      "id": "cf4fa121-2011-4553-ada1-1fa2044ea44b",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "b91d2c39-635d-4193-8a22-2a838bc3ef47",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-tatt-1200x1500.e32b4ef9.jpg"
+    }, {
+      "id": "65d7487a-f077-4ea5-bb27-d2c057bc0127",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Backpack"
+    }, {
+      "id": "86bd0e8e-d43c-4f97-9043-08d70715c16d",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "c0676aae-6b87-4829-b846-e6a71437706d",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-backpack-1200x1500.34e7aa42.jpg"
+    }, {
+      "id": "e72d8ba3-850d-4408-840c-4507294f09c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Fleece Jacket"
+    }, {
+      "id": "783a51ad-c6ac-4402-80d4-558c03bcc18d",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "b4b255e7-bf1f-4ffb-93b3-e0c1f74c603c",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-pullover-1200x1500.439fc934.jpg"
+    }, {
+      "id": "c24068c1-0ba6-4bd0-a903-958da453d434",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c44a072a-e6b6-4bb6-8cb7-4aebd44d02a5",
+    "name": "Sort Product Name (High to Low)",
+    "commands": [{
+      "id": "132ff94a-b502-4a9b-a201-6dc56db7533e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ae9e62c-977b-4e94-a2ba-4111a6957439",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x879",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "565d7292-209c-4d7c-845c-3ccd8fc18bf5",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea35527b-d5ea-4c93-bdc8-58c127433582",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "084853a0-60a4-4756-8dd1-c9f6732209c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d573a1-d2d6-4ea2-83d2-75a8fbc445b5",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "83830684-5f3a-4421-ac08-c6c58eb21953",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7217b9e6-5974-497f-8eb0-86bc720c9a2e",
+      "comment": "",
+      "command": "select",
+      "target": "css=*[data-test=\"product_sort_container\"]",
+      "targets": [
+        ["css=*[data-test=\"product_sort_container\"]", "css:data-attr"],
+        ["css=.product_sort_container", "css:finder"],
+        ["xpath=//div[@id='header_container']/div[2]/div[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Price (high to low)"
+    }, {
+      "id": "de169c9d-1436-45f1-9fcf-0c6081715a28",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Fleece Jacket"
+    }, {
+      "id": "1b484533-fa43-4283-abbc-65c902b350ff",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[1]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "97adcd90-8de2-47d0-b92a-fd603dbcb97e",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-pullover-1200x1500.439fc934.jpg"
+    }, {
+      "id": "44f742f1-69fc-44ae-841f-b91ec6f570cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Backpack"
+    }, {
+      "id": "4769fab7-4afa-49e6-8f72-be6d9a33d09b",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[2]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "927f0297-5d3b-4333-ab47-5b73d5dbd864",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/sauce-backpack-1200x1500.34e7aa42.jpg"
+    }, {
+      "id": "0cc83ff1-3b3e-4a50-b38f-bed706a8f84e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bolt T-Shirt"
+    }, {
+      "id": "a373ff8d-2b75-4aa7-b45a-edef6d49065e",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[3]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "302238dd-55ab-4302-b70b-ba006b45915c",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bolt-shirt-1200x1500.c0dae290.jpg"
+    }, {
+      "id": "f4de852f-8a7f-4b72-b522-039f3f74d68d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Test.allTheThings() T-Shirt (Red)"
+    }, {
+      "id": "bb53b347-10e0-4b49-8eff-09f6b55db9ff",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[4]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "c6ebe2fc-57ea-4970-b5bb-51b04b493ab9",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-tatt-1200x1500.e32b4ef9.jpg"
+    }, {
+      "id": "141fb134-603d-41d9-9fa2-ad1ff4c16a9e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Bike Light"
+    }, {
+      "id": "087a5126-e474-465a-8865-39310fd4a668",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[5]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "68337771-4ce7-451c-85e4-423e3739162a",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/bike-light-1200x1500.a0c9caae.jpg"
+    }, {
+      "id": "2957f167-a2f1-4b24-9a48-562270924a43",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[2]/div[1]/a/div ",
+      "targets": [],
+      "value": "Sauce Labs Onesie"
+    }, {
+      "id": "0ad605b0-255c-4e8a-9e6e-e2863ac1695d",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=/html/body/div/div/div/div[2]/div/div/div/div[6]/div[1]/a/img@src",
+      "targets": [],
+      "value": "img_src"
+    }, {
+      "id": "0c5b3878-299a-4b4f-9001-2d0cab85407b",
+      "comment": "",
+      "command": "assert",
+      "target": "img_src",
+      "targets": [],
+      "value": "/static/media/red-onesie-1200x1500.1b15e1fa.jpg"
+    }, {
+      "id": "f6dc71bb-e854-49fa-9565-684e18cc843c",
       "comment": "",
       "command": "close",
       "target": "",

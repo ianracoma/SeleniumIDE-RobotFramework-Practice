@@ -1,0 +1,11 @@
+1639401144264	geckodriver	INFO	Listening on 127.0.0.1:54217
+1639401147392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Shika\\AppData\\Local\\Temp\\rust_mozprofile2pgavS"
+1639401148346	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Shika\\AppData\\Local\\Temp\\rust_mozprofile2pgavS\\search.json.mozlz4", (void 0)))
+1639401155269	Marionette	INFO	Listening on port 54228
+1639401155722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639401162583	Marionette	INFO	Stopped listening on port 54228
+[Parent 164692, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
